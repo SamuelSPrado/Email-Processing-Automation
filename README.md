@@ -63,7 +63,7 @@ O objetivo é:
 Caso o e-mail não contenha um `.csv`, envia resposta automática:
 
 ```
-Prezado(a),
+Prezado(a) {{ $('Gmail Trigger').item.json.from.value[0].name }},
 
 Não foi possível concluir o processo de automação, pois o e-mail recebido não continha nenhum arquivo .csv anexado.
 
@@ -71,7 +71,7 @@ Não foi possível concluir o processo de automação, pois o e-mail recebido n�
 Por favor, reenviar o e-mail garantindo que o arquivo esteja anexado e no formato correto (.csv).
 
 Atenciosamente,
-Sistema de Automação n8n
+Samuel Prado
 ```
 
 ---
@@ -81,7 +81,7 @@ Sistema de Automação n8n
 Caso o fluxo seja concluído com sucesso, envia resposta automática:
 
 ```
-Prezado(a) {{nome do remetente}},
+Prezado(a) {{ $('Gmail Trigger').item.json.from.value[0].name }},
 
 O processo de automação foi concluído com sucesso.
 
@@ -91,7 +91,7 @@ O processo de automação foi concluído com sucesso.
 Fonte: Exchange Rate API (https://open.er-api.com)
 
 Atenciosamente,
-Sistema de Automação n8n
+Samuel Prado
 ```
 
 ---
