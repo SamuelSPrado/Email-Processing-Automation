@@ -1,4 +1,3 @@
-````markdown
 # 📄 Projeto n8n – Automação de Processamento de E-mails com Anexo CSV
 
 ## 🚀 Visão Geral
