@@ -30,11 +30,8 @@ O objetivo é:
 ### 2. IF
 - Verifica se existe anexo `.csv`.  
 - **Condição aplicada:**  
-  ```js
+  ```
   {{$binary.attachment_0.fileName}} termina com .csv
-````
-
----
 
 ### 3. Upload File (Google Drive)
 
